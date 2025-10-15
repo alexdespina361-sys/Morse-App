@@ -1,10 +1,10 @@
 import React, { useState, useRef, useCallback, useEffect } from 'react';
-import { MorseSettings } from './types';
-import { MORSE_CODE_MAP } from './constants';
-import Controls from './components/Controls';
-import Display from './components/Display';
-import Header from './components/Header';
-import { PlayIcon, StopIcon, EyeIcon, EyeSlashIcon } from './components/Icons';
+import { MorseSettings } from './types.ts';
+import { MORSE_CODE_MAP } from './constants.ts';
+import Controls from './components/Controls.tsx';
+import Display from './components/Display.tsx';
+import Header from './components/Header.tsx';
+import { PlayIcon, StopIcon, EyeIcon, EyeSlashIcon } from './components/Icons.tsx';
 
 interface UiUpdate {
     char: string;

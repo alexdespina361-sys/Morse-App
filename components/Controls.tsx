@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { MorseSettings } from '../types';
+import { MorseSettings } from '../types.ts';
 
 interface ControlsProps {
     settings: MorseSettings;

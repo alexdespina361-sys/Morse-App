@@ -1,5 +1,5 @@
 import React from 'react';
-import { RefreshCw } from './Icons';
+import { RefreshCw } from './Icons.tsx';
 
 interface HeaderProps {
     onReset: () => void;
