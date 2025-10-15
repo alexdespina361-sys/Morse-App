@@ -1,0 +1,5 @@
+{
+  "name": "Morse Code Generator",
+  "description": "A web application to generate and play Morse code with customizable settings for speed, character groups, spacing, and more. Practice your listening skills with features like hidden text display.",
+  "requestFramePermissions": []
+}
