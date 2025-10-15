@@ -1,4 +1,3 @@
-
 import React, { useState, useRef, useCallback, useEffect } from 'react';
 import { MorseSettings } from './types';
 import { MORSE_CODE_MAP } from './constants';
@@ -248,17 +247,9 @@ const App: React.FC = () => {
       }
     }, [isPlaying]);
 
-    const handleToggleFullscreen = useCallback(() => {
-        if (!document.fullscreenElement) {
-            document.documentElement.requestFullscreen().catch(console.error);
-        } else {
-            document.exitFullscreen().catch(console.error);
-        }
-    }, []);
-
     return (
         <div className="min-h-screen flex flex-col items-center justify-center p-4 sm:p-8 font-sans">
-             <Header onReset={handleReset} onToggleFullscreen={handleToggleFullscreen} />
+             <Header onReset={handleReset} />
             <div className="w-full max-w-5xl mx-auto">
                 <main className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div className="md:col-span-1 bg-slate-800 p-6 rounded-lg shadow-lg">
